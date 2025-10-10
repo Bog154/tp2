@@ -1,19 +1,22 @@
 let pag;
 let fondo = [];
 let fuente
+let dialogos;
 let animacion;
 let puerta, llave, libro, velas;
 let color1, color2;
 
 function preload(){
-  fuente = loadFont('assets/Creepster-Regular.ttf')
-  fondo.push( loadImage('assets/inicio.png'))
-  for(i = 0; i < 6; i++){
-  fondo.push(loadImage('assets/anim0' + i + '.jpg'));
+
+  fuente = loadFont('assets/Creepster-Regular.ttf');
+  dialogos = loadStrings('assets/Cinematica.txt');
+  fondo.push( loadImage('assets/inicio.png'));
+  for(i = 0; i < 7; i++){
+    fondo.push(loadImage('assets/anim0' + i + '.jpg'));
   }
-  fondo.push( loadImage('assets/pandillaAuto.png'));
-  fondo.push( loadImage('assets/mansion00.png'));
-  fondo.push( loadImage('assets/mansion01.png'));
+  for(i = 0; i < 4; i++){
+    fondo.push(loadImage('assets/mansion0' + i + '.jpg'));
+  }
 }
 
 function setup() {
@@ -64,10 +67,11 @@ function draw() {
   } else if (pag==1){
     background(100, 12, 80);
     image(fondo[pag], 0, -140);
+    text(dialogos[0], 50, 380);
 
     animacion++
     text(int(animacion / 60), 600, 400);
-    if (animacion > 600) {
+    if (animacion > 150) {
       pag = 2;
       animacion = 0;
     }
@@ -75,11 +79,12 @@ function draw() {
   } else if (pag == 2){
     background(20);
     image(fondo[pag], 0, 0);
+    text(dialogos[1], 50, 380);
 
     
     animacion++
     text(int(animacion / 60), 600, 400);
-    if (animacion > 600) {
+    if (animacion > 150) {
       pag = 3;
       animacion = 0;
     }
@@ -87,50 +92,58 @@ function draw() {
   } else if (pag == 3){
     background(20);
     image(fondo[pag], 0, 0);
+    text(dialogos[2], 10, 430, 300);
+    text(dialogos[3], 350, 350, 300);
     
     animacion++
     text(int(animacion / 60), 600, 400);
-    if (animacion > 600) {
+    if (animacion > 150) {
       pag = 4;
       animacion = 0;
     }
   }else if (pag == 4){
     background(20);
     image(fondo[pag], 0, 0);
+    text(dialogos[4],150, 400);
 
     animacion++
     text(int(animacion / 60), 600, 400);
-    if (animacion > 600) {
+    if (animacion > 150) {
       pag = 5;
       animacion = 0;
     }
   }else if (pag == 5){
     background(20);
     image(fondo[pag], 0, 0);
+    text(dialogos[5],180, 400);
 
     animacion++
     text(int(animacion / 60), 600, 400);
-    if (animacion > 600) {
+    if (animacion > 150) {
       pag = 6;
       animacion = 0;
     }
   }else if (pag == 6){
     background(20);
     image(fondo[pag], 0, 0);
+    text(dialogos[6],20, 400, 300);
+    text(dialogos[7],400, 400);
 
     animacion++
     text(int(animacion / 60), 600, 400);
-    if (animacion > 600) {
+    if (animacion > 150) {
       pag = 7;
       animacion = 0;
     }
   }else if (pag == 7){
     background(20);
-    image(fondo[pag], 0, 0);
+    image(fondo[pag], 0, -100);
+    text(dialogos[8],30, 400, 300);
+    text(dialogos[9],370, 300, 230);
 
     animacion++
     text(int(animacion / 60), 600, 400);
-    if (animacion > 600) {
+    if (animacion > 150) {
       animacion = 0;
     }
   }
@@ -142,10 +155,10 @@ function mouseClicked(){
       pag=1;
     }
     if(botonCreditos){
-      pag = pag.length;
+      pag = 7;
     }
   }
-  if(pag > fondo.length){
+  if(fondo == fondo.length){
     pag=0;
   }
 }
