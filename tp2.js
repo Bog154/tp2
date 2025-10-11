@@ -548,7 +548,7 @@ function mouseClicked() {
   }
   if (pag == 30){
     if(botonSig){
-      pag = 0;
+      pag = -1;
     }
   }
   if(botonSig){
