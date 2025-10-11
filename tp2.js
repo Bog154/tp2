@@ -23,6 +23,7 @@ function preload() {
   for(i = 0; i < 7; i++){
     fondo.push(loadImage('assets/mansion'+ i +'.jpg'));
   }
+  fondo.push(loadImage('assets/irse.jpg'));
   gif.push(loadImage('assets/buscando.gif'));
   gif.push(loadImage('assets/mansion10.gif'));
 }
@@ -473,12 +474,22 @@ else if (pag == 12) {
   }
   else if (pag == 31) {
     background(20);
-    image(fondo[pag-2], 0, 0);
+    image(fondo[20], 0, 0);
 
-    fill(40, 1);
-    rect(40, 210, 570, 100);
     fill(color1);
-    text(dialogos[23], 55, 245, 570);
+    text(dialogos[49], 55, 425, 570);
+    
+    if (botonSig) fill(color2); else fill(color1);
+    text("->", 600, 460);
+  }
+  else if (pag == 32) {
+    background(20);
+    image(fondo[0], 0, 0);
+
+    fill(color1);
+    text(dialogos[50], 175, 125, 570);
+    text(dialogos[51], 145, 225, 570);
+    text(dialogos[52], 175, 325, 570);
     
     if (botonSig) fill(color2); else fill(color1);
     text("->", 600, 460);
@@ -492,13 +503,13 @@ function mouseClicked() {
 
   if (pag == 8) {
     if (botonQuedarse) pag = 9;
-    if (botonIrse) pag = 0;
+    if (botonIrse) pag = 31;
   }
 
   if (pag == 9) {
     if (boton1) pag = 10;
     if (boton2) {
-      // acción pendiente
+      pag = 32;
     }
     if (boton3) {
       // acción pendiente
@@ -547,6 +558,11 @@ function mouseClicked() {
     }
   }
   if (pag == 30){
+    if(botonSig){
+      pag = -1;
+    }
+  }
+  if (pag == 31){
     if(botonSig){
       pag = -1;
     }
