@@ -20,7 +20,7 @@ function preload() {
   for (i = 0; i < 12; i++) {
     fondo.push(loadImage('assets/pantalla' + i + '.jpg'));
   }
-  for(i = 0; i < 6; i++){
+  for(i = 0; i < 7; i++){
     fondo.push(loadImage('assets/mansion'+ i +'.jpg'));
   }
   gif.push(loadImage('assets/buscando.gif'));
@@ -266,7 +266,7 @@ else if (pag == 12) {
     background(20);
     image(fondo[pag-2], 0, 0);
     boton1 = (mouseX >= 50 && mouseX < 212 && mouseY >= 220 && mouseY < 250);
-    boton2 = (mouseX >= 320 && mouseX < 580 && mouseY >= 220 && mouseY < 250);
+    boton2 = (mouseX >= 450 && mouseX < 550 && mouseY >= 220 && mouseY < 250);
 
     fill(color1);
     text(dialogos[24], 220, 145, 570);
@@ -331,10 +331,11 @@ else if (pag == 12) {
   }
   else if (pag == 20) {
     // INTENTO DE SOLTARLOS
+    botonSig = false;
     boton1 = (mouseX >= 40 && mouseX < 260 && mouseY >= 215 && mouseY < 290);
     boton2 = (mouseX >= 385 && mouseX < 610 && mouseY >= 215 && mouseY < 250);
     background(20);
-    image(fondo[pag-2], 0, 0);
+    image(fondo[17], 0, 0);
 
     fill(color1);
     text(dialogos[31], 220, 145, 570);
@@ -346,120 +347,126 @@ else if (pag == 12) {
   }
   else if (pag == 21) {
     background(20);
-    image(fondo[pag-2], 0, 0);
+    image(fondo[17], 0, 0);
 
     fill(40, 1);
-    rect(40, 210, 570, 100);
+    rect(40, 210, 570, 130);
     fill(color1);
-    text(dialogos[23], 55, 245, 570);
+    text(dialogos[34], 55, 245, 570);
     
     if (botonSig) fill(color2); else fill(color1);
     text("->", 600, 460);
   }
   else if (pag == 22) {
     background(20);
-    image(fondo[pag-2], 0, 0);
+    image(fondo[18], 0, 0);
 
     fill(40, 1);
-    rect(40, 210, 570, 100);
+    rect(40, 210, 580, 120);
     fill(color1);
-    text(dialogos[23], 55, 245, 570);
+    text(dialogos[35], 55, 245, 570);
     
     if (botonSig) fill(color2); else fill(color1);
     text("->", 600, 460);
   }
   else if (pag == 23) {
+    botonSig = false;
+    boton1 = (mouseX >= 50 && mouseX < 212 && mouseY >= 220 && mouseY < 250);
+    boton2 = (mouseX >= 450 && mouseX < 550 && mouseY >= 220 && mouseY < 250);
     background(20);
-    image(fondo[pag-2], 0, 0);
+    image(fondo[18], 0, 0);
 
-    fill(40, 1);
-    rect(40, 210, 570, 100);
+
     fill(color1);
-    text(dialogos[23], 55, 245, 570);
+    text(dialogos[36], 220, 145, 570);
+    if (boton1) fill(color2); else fill(color1);
+    text(dialogos[37], 55, 245, 570);
+    if (boton2) fill(color2); else fill(color1);
+    text(dialogos[38], 455, 245, 570);
     
-    if (botonSig) fill(color2); else fill(color1);
-    text("->", 600, 460);
   }
   else if (pag == 24) {
     background(20);
-    image(fondo[pag-2], 0, 0);
+    image(fondo[19], 0, 92);
 
     fill(40, 1);
-    rect(40, 210, 570, 100);
+    rect(40, 310, 590, 130);
     fill(color1);
-    text(dialogos[23], 55, 245, 570);
+    text(dialogos[39], 55, 345, 570);
     
     if (botonSig) fill(color2); else fill(color1);
     text("->", 600, 460);
   }
   else if (pag == 25) {
+    botonSig = false;
+    boton1 = (mouseX >= 50 && mouseX < 125 && mouseY >= 415 && mouseY < 445);
+    boton2 = (mouseX >= 455 && mouseX < 550 && mouseY >= 415 && mouseY < 445);
     background(20);
-    image(fondo[pag-2], 0, 0);
+    image(fondo[19], 0, 0);
 
-    fill(40, 1);
-    rect(40, 210, 570, 100);
     fill(color1);
-    text(dialogos[23], 55, 245, 570);
-    
-    if (botonSig) fill(color2); else fill(color1);
-    text("->", 600, 460);
+    text("¿QUE HACES?", 220, 145, 570);
+    if (boton2) fill(color2); else fill(color1);
+    text(dialogos[40], 445, 445, 570);
+    if (boton1) fill(color2); else fill(color1);
+    text(dialogos[41], 55, 445, 570);
   }
   else if (pag == 26) {
+    botonSig = true;
     background(20);
-    image(fondo[pag-2], 0, 0);
+    image(fondo[19], 0, 0);
 
     fill(40, 1);
-    rect(40, 210, 570, 100);
+    rect(40, 260, 570, 100);
     fill(color1);
-    text(dialogos[23], 55, 245, 570);
+    text(dialogos[42], 50, 305, 570);
     
     if (botonSig) fill(color2); else fill(color1);
     text("->", 600, 460);
   }
   else if (pag == 27) {
     background(20);
-    image(fondo[pag-2], 0, 0);
+    image(fondo[16], 0, 0);
 
     fill(40, 1);
-    rect(40, 210, 570, 100);
+    rect(140, 210, 270, 70);
     fill(color1);
-    text(dialogos[23], 55, 245, 570);
+    text(dialogos[43], 155, 245, 570);
     
     if (botonSig) fill(color2); else fill(color1);
     text("->", 600, 460);
   }
   else if (pag == 28) {
+    botonSig = false;
+    boton1 = (mouseX >= 50 && mouseX < 185 && mouseY >= 215 && mouseY < 245);
+    boton2 = (mouseX >= 440 && mouseX < 610 && mouseY >= 215 && mouseY < 245);
     background(20);
-    image(fondo[pag-2], 0, 0);
+    image(fondo[17], 0, 0);
 
-    fill(40, 1);
-    rect(40, 210, 570, 100);
     fill(color1);
-    text(dialogos[23], 55, 245, 570);
+    if (boton1) fill(color2); else fill(color1);
+    text(dialogos[44], 55, 245, 570);
+    if (boton2) fill(color2); else fill(color1);
+    text(dialogos[45], 445, 245, 570);
     
-    if (botonSig) fill(color2); else fill(color1);
-    text("->", 600, 460);
   }
   else if (pag == 29) {
+    botonSig = true;
     background(20);
-    image(fondo[pag-2], 0, 0);
+    image(gif[1], 0, 0);
 
-    fill(40, 1);
-    rect(40, 210, 570, 100);
     fill(color1);
-    text(dialogos[23], 55, 245, 570);
+    text(dialogos[46], 55, 145, 570);
     
     if (botonSig) fill(color2); else fill(color1);
     text("->", 600, 460);
   }
   else if (pag == 30) {
-    background(20);
-    image(fondo[pag-2], 0, 0);
+    background(0);
 
-    fill(40, 1);
-    rect(40, 210, 570, 100);
     fill(color1);
-    text(dialogos[23], 55, 245, 570);
+    text(dialogos[47], 175, 245, 570);
+    text(dialogos[48], 215, 275, 570);
     
     if (botonSig) fill(color2); else fill(color1);
     text("->", 600, 460);
@@ -480,7 +487,7 @@ else if (pag == 12) {
 function mouseClicked() {
   if (pag == 0) {
     if (botonInicio) pag = 1;
-    if (botonCreditos) pag = 17;
+    if (botonCreditos) pag = 26;
   }
 
   if (pag == 8) {
@@ -499,7 +506,7 @@ function mouseClicked() {
   }
   if (pag == 15){
     if(boton1){
-
+      pag = 22;
     }
     if(boton2){
       pag = 16;
@@ -510,6 +517,38 @@ function mouseClicked() {
       pag = 21;
     }
     if(boton2){
+    }
+  }
+  if (pag == 21){
+    if(botonSig){
+      pag = 14;
+    }
+  }
+  if (pag == 23){
+    if(boton1){
+      pag = 24;
+    }
+    if(boton2){
+      pag = 15;
+    }
+  }
+  if (pag == 25){
+    if(boton1){
+    }
+    if(boton2){
+      pag = 26;
+    }
+  }
+  if (pag == 28){
+    if(boton1){
+      pag = 29;
+    }
+    if(boton2){
+    }
+  }
+  if (pag == 30){
+    if(botonSig){
+      pag = 0;
     }
   }
   if(botonSig){

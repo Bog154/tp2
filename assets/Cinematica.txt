@@ -33,17 +33,11 @@ Fred: SHAGGY, SCOOBY AYUDENNOS!!!
 TRATAR DE ROMPER LAS CADENAS
 AGARRAR LAS LLAVES
 tratas de romper las cadenas pero sin herramientas no lo logras, prometes volver y buscas en otra zona de la mansión
-¿QUE HACER?
-SEGUNDO PISO
-ESTUDIO
 el segundo piso esta destrozado por la humedad y el tiempo, las únicas zona accesible es una habitación
 ¿QUE HACER?
 HABITACIÓN
 VOLVER
-en la habitación de la izquierda hay unas velas, un encendedor y un libro extraño
-AGARRAR
-DEJAR
-en la habitación de la derecha hay un ídolo y una pequeña llave
+en la habitación de la izquierda hay unas velas, un encendedor, un libro extraño, un ídolo y una pequeña llave
 AGARRAR
 DEJAR
 Shaggy: con esto deberíamos poder hacer algo
@@ -51,3 +45,5 @@ vuelven a la prisión
 USAR LLAVE
 ARMAR RITUAL
 mientras liberas a la pandilla comienzan a aparecer cultistas pero por suerte logran llegar a la maquina del misterio y escapar
+Terminaste el juego 
+¡¡¡FELICIDADES!!!
