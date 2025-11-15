@@ -33,11 +33,11 @@ Fred: SHAGGY, SCOOBY AYUDENNOS!!!
 TRATAR DE ROMPER LAS CADENAS
 AGARRAR LAS LLAVES
 tratas de romper las cadenas pero sin herramientas no lo logras, prometes volver y buscas en otra zona de la mansión
-el segundo piso esta destrozado por la humedad y el tiempo, las únicas zona accesible es una habitación
+el segundo piso esta destrozado por la humedad y el tiempo, la única zona accesible es una habitación
 ¿QUE HACER?
 HABITACIÓN
 VOLVER
-en la habitación de la izquierda hay unas velas, un encendedor, un libro extraño, un ídolo y una pequeña llave
+en la habitación hay unas velas, un encendedor, un libro extraño, un ídolo y una pequeña llave
 AGARRAR
 DEJAR
 Shaggy: con esto deberíamos poder hacer algo
@@ -48,3 +48,25 @@ mientras liberas a la pandilla comienzan a aparecer cultistas pero por suerte lo
 Terminaste el juego 
 ¡¡¡FELICIDADES!!!
 ESCAPAN Y NUNCA MAS SABEN DEL RESTO DE LA PANDILLA 
+No fue posible abrir la puerta
+prueba buscando la llave
+o en la maquina del misterio
+¿Qué tal si buscamos en la maquina del misterio?
+buena idea scooby
+me pareció ver algo interesante ahí además de estos deliciosos sándwiches encontré una palanca scooby
+¿Qué opinas si vemos si podemos entrar a la casa usándola scooby?
+logran abrir la puerta y festejan
+buscan por todo el estudio algo que les pueda ser de utilidad pero no encuentran nada
+BUSCAR EN OTRA HABITACIÓN
+IRSE
+agarran los objetos y salen corriendo esperando encontrar alguien que pueda ayudarlos a encontrar al resto con esta evidencia
+toda la situación los supera, el miedo no los deja pensar, salen corriendo despavoridos olvidando al resto de la pandilla
+Muy dentro de ustedes sentían la necesidad de posicionar todos los objetos en el centro de la habitación De pronto toda la habitación comienza a temblar y de la tierra se alza un ser de otro mundo
+No lograron salvar al resto de la pandilla y se convirtieron en el sacrificio de un ser de otra dimensión
+PERDISTE
+MENU
+Toman las llaves de la maquina del misterio y huyen
+CREDITOS
+PROGRAMACION --- MOREIRA AGUSTINA/PEREZ LUCIO
+HISTORIA --- MOREIRA AGUSTINA/PEREZ LUCIO
+SONIDO --- MOREIRA AGUSTINA/PEREZ LUCIO
